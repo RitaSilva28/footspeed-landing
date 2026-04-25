@@ -1,5 +1,7 @@
 import "./index.css";
 import logoImage from "../src/assets/Logo_title.png"
+import DemoTrainer from "./DemoTrainer";
+
 
 function App() {
   return (
@@ -42,57 +44,55 @@ function App() {
           </div>
         </div>
 
-        <div className="trainerPreview">
+<div className="iphoneFrame">
+
+ <video
+  className="appVideo"
+  src={`${import.meta.env.BASE_URL}footspeed.mp4`}
+  autoPlay
+  loop
+  muted
+  playsInline
+  controls
+/>
+</div>
+        {/* <div className="trainerPreview">
           <p className="previewLabel">DEMO DRILL</p>
           <p className="timer">00:40</p>
           <p className="conesCalledCount">Cones called: 0</p>
           <button className="startBtn">Start</button>
-        </div>
+        </div> */}
       </section>
 
-      <section id="demo" className="content landingSection">
+    <section id="demo" className="content landingSection">
+  <div className="demoFullCard">
+    <div className="demoHeaderGrid">
+      <div className="demoIntro">
         <p className="eyebrow">TRY IT FIRST</p>
-        <h2 className="sectionTitle">Test a short drill before unlocking the full trainer.</h2>
+        <h2 className="sectionTitle">
+          Test a short drill before unlocking the full trainer.
+        </h2>
+        <p>
+          This demo gives you a quick version of the real trainer: limited
+          colors, fixed duration and voice calls included.
+        </p>
+      </div>
 
-        <div className="twoColumn">
-          <div className="infoCard">
-            <h3>Demo version</h3>
-            <p>
-              Try a limited version of the trainer with a short timer and basic
-              voice calls.
-            </p>
+      <div className="demoInfoPanel">
+        <h3>Demo version</h3>
+        <ul>
+          <li>Short reaction drill</li>
+          <li>Limited cone colors</li>
+          <li>Voice calls included</li>
+          <li>Fixed 40 second duration</li>
+          <li>5 second interval between calls</li>
+        </ul>
+      </div>
+    </div>
 
-            <ul>
-              <li>Short reaction drill</li>
-              <li>Limited cone colors</li>
-              <li>Voice calls included</li>
-            </ul>
-          </div>
-
-          <div className="settingsCard">
-            <p className="settingsTitle">Demo settings</p>
-
-            <div className="settingRow">
-              <span>Duration</span>
-              <strong>0:40</strong>
-            </div>
-
-            <div className="settingRow">
-              <span>Interval between calls</span>
-              <strong>3s</strong>
-            </div>
-
-            <div className="colorPreviewRow">
-              <span className="colorSquare red"></span>
-              <span className="colorSquare blue"></span>
-            </div>
-
-            <a className="primaryBtn fullWidth" href="#pricing">
-              Get Full Access
-            </a>
-          </div>
-        </div>
-      </section>
+    <DemoTrainer />
+  </div>
+</section>
 
       <section className="content landingSection">
         <p className="eyebrow">WHY IT WORKS</p>
@@ -129,7 +129,7 @@ function App() {
           <h2 className="sectionTitle">Unlock the complete trainer.</h2>
 
           <ul className="pricingList">
-            <li>All cone colors</li>
+            <li>Custom cone colors</li>
             <li>Custom duration</li>
             <li>Custom interval between calls</li>
             <li>Exercise history</li>

@@ -1,0 +1,193 @@
+@keyframes colorPulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+.demoExercise {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-align: center;
+}
+
+.demoTimerBlock {
+	margin-bottom: 2rem;
+}
+
+.demoTimer {
+	font-size: clamp(4.8rem, 13vw, 8.5rem);
+	font-weight: 900;
+	margin: 0;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -5px;
+	line-height: 0.95;
+	color: #ffffff;
+}
+
+.demoCones {
+	font-size: 1.3rem;
+	color: #e0e0e0;
+	margin-top: 1rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.demoCurrentColor {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem auto;
+	animation: colorPulse 1s ease-out;
+	border: 5px solid rgba(255, 255, 255, 0.14);
+	box-shadow:
+		0 0 0 8px rgba(255, 255, 255, 0.04),
+		0 14px 40px rgba(0, 0, 0, 0.55);
+}
+
+.demoCurrentColor span {
+	color: rgba(0, 0, 0, 0.82);
+	font-size: 2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.demoNextCall {
+	font-size: 1.45rem;
+	color: #ffffff;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 2rem 0;
+}
+
+.startBtn {
+	padding: 1.2rem 3rem;
+	background: #ee5a2f;
+	border: none;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 900;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.startBtn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
+}
+
+.demoStartBtn {
+	margin: 2rem 0;
+}
+
+.demoBackBtn {
+	padding: 1.1rem 2.8rem;
+	background: transparent;
+	border: 3px solid rgba(255, 255, 255, 0.55);
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 900;
+	border-radius: 16px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.demoBackBtn:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: #ffffff;
+}
+
+.demoHistoryCard {
+	max-width: 720px;
+	margin: 3rem auto 0;
+	background: rgba(255, 255, 255, 0.055);
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 22px;
+	padding: 1.8rem;
+	text-align: left;
+}
+
+.historyTitle {
+	font-size: 0.95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #e0e0e0;
+	margin: 0 0 1rem 0;
+}
+
+.demoColorHistoryList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	max-height: 180px;
+	overflow-y: auto;
+}
+
+.demoHistoryChip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	background: rgba(255, 255, 255, 0.12);
+	padding: 0.65rem 1rem;
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: #ffffff;
+	white-space: nowrap;
+}
+
+.demoHistoryDot {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	flex-shrink: 0;
+}
+
+.emptyHistory {
+	color: #888;
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.demoCurrentColor {
+		width: 180px;
+		height: 180px;
+	}
+
+	.demoCurrentColor span {
+		font-size: 1.5rem;
+	}
+
+	.demoNextCall {
+		font-size: 1.1rem;
+	}
+
+	.demoHistoryCard {
+		padding: 1.2rem;
+	}
+}
