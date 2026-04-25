@@ -390,6 +390,10 @@ a {
     font-size: 0.85rem;
   }
 
+  .logoImage{
+  width: 300px;
+}
+
   .heroSection,
   .benefitGrid,
   .demoHeaderGrid {
