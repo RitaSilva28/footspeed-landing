@@ -73,7 +73,7 @@ function App() {
           Test a short drill before unlocking the full trainer.
         </h2>
         <p>
-          This demo gives you a quick version of the real trainer: limited
+          This demo gives you a quick version of the real trainer: 2 limited
           colors, fixed duration and voice calls included.
         </p>
       </div>
