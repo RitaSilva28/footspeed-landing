@@ -139,7 +139,7 @@ function App() {
           <p className="price">€4.99</p>
           <p className="priceNote">One-time payment</p>
 
-          <a className="primaryBtn" href="http://localhost:5173/footspeed/?mode=signup&intent=buy" target="_blank" rel="noopener noreferrer">
+          <a className="primaryBtn" href="https://ritasilva28.github.io/footspeed/?mode=signup&intent=buy" target="_blank" rel="noopener noreferrer">
             Buy Full Access
           </a>
         </div>
